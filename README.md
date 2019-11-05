@@ -25,9 +25,9 @@ Annotated Data mentioned in the paper is available in the ./Data folder (obtaine
 
 - Clone the repository to your local machine:
 - ```sh
-    git@github.com:jpsain/Suicide-Severity.git
+    git clone git@github.com:jpsain/Suicide-Severity.git
     ```
-- Download the ConceptNet term vectors ("English-only") from [https://github.com/commonsense/conceptnet-numberbatch)
+- Download the ConceptNet term vectors ("English-only") from [https://github.com/commonsense/conceptnet-numberbatch]
 - Obtain external features for each reddit post in the input file ("Data/500_Reddit_users_posts_labels.csv") and save it as "Data/External_Features.csv".
     - External_Features.csv: "User", "Features"
 - In the models -> 5-Label_Classification.py / 4-Label_Classification.py / 3+1-Label_Classification.py, modify the parameters as you desire and then run the code.
@@ -35,6 +35,16 @@ Annotated Data mentioned in the paper is available in the ./Data folder (obtaine
     python 5-Label_Classification.py
     ```
 - The results will be save as "Result_5-Label_Classification.tsv".
+
+## Required Packages
+
+- Python 2.7
+- nltk
+- gensim
+- numpy
+- sklearn
+- keras
+
 
 ## Licenses ##
 
@@ -70,6 +80,6 @@ If you do make use of dataset or models or any of its components please cite the
 
 We would also be very happy if you provide a link to the github repository:
 
-    ... Suicide Risk Severity Assessment\footnote{
+    ... Suicide Risk Severity Assessment tool\footnote{
         \url{https://github.com/jpsain/Suicide-Severity}
     }
